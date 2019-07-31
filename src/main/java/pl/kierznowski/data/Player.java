@@ -1,10 +1,12 @@
 package pl.kierznowski.data;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Data
 public class Player {
 
-    private final int id;
-    private final String name;
+    private int id;
+    private String name;
 }

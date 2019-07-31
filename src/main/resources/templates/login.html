@@ -6,13 +6,13 @@
 <body>
 <h1>Login page</h1>
 <!--<p th:if="${loginError}" class="error">Wrong user or password</p>-->
-<form th:action="@{/login.html}" method="post">
-    <label for="username">Username</label>:
-    <input type="text" id="username" name="username"/> <br/>
-    <label for="password">Password</label>:
-    <input type="password" id="password" name="password"/> <br/>
-    <label for="asd">asd</label>:
-    <input type="asd" id="asd" name="asd"/> <br/>
+<form th:action="@{/logged}" th:object="${player}" method="post">
+    <label for="name">Username</label>:
+    <input type="text" id="name" th:field="*{name}"/>
+    <!--    <label for="username">Username</label>:-->
+    <!--    <input type="text" id="username" name="username"/> <br/>-->
+    <!--    <label for="password">Password</label>:-->
+    <!--    <input type="password" id="password" name="password"/> <br/>-->
     <input type="submit" value="Log in"/>
 </form>
 </body>
