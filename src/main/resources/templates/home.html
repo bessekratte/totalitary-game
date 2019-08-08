@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<header>
+    <h4 th:text="#{game.name}">Game Name</h4>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#" th:href="@{/login}">Zaloguje sie</a></li>
+            <li><a href="#" th:href="@{/history}">Historia</a></li>
+            <li><a href="#" th:href="@{/contact}">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>The Totalitary Game</h1>
+        <p>Here, u can experience real-world immovables scenarios</p>
+        <p>Play on stock exchange, buy </p>
+    </article>
+
+</section>
+
+
+
+</body>
+</html>
